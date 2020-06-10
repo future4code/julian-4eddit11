@@ -1,0 +1,42 @@
+.FormLogin {
+    width: 400px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .FormFieldset {
+    text-align: left;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    border-color: blue;
+    color: blue;
+  }
+  
+  .FormInput {
+    outline: none;
+    border: none;
+    width: 100%;
+    font-size: 18px;
+  }
+  
+  .BtnLogin {
+    width: 200px;
+    padding: 15px 20px;
+    background: none;
+    border: 1px solid blue;
+    color: blue;
+    cursor: pointer;
+    transition: 400ms;
+  }
+  
+  .BtnLogin:hover {
+    background-color: blue;
+    color: white;
+  }
+  
+  span {
+    text-decoration: none;
+    color: blue;
+    cursor: pointer;
+  }
+  
