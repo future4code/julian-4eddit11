@@ -1,8 +1,12 @@
 import React, { useState, useEffect } from "react";
-
 import axios from "axios";
-import { baseUrl } from "../../LoginForm";
+import './CardFeed.css'
 import { useHistory } from "react-router-dom";
+import { baseUrl } from "../../Configs/url";
+import Header from "../../Header";
+import CardPost from "../../CardPost";
+import CardFeed from "../../CardFeed";
+
 
 function FeedPage() {
   const [posts, setPosts] = useState([]);
@@ -11,7 +15,7 @@ function FeedPage() {
   const showPosts = () => {
     const token = localStorage.getItem("token");
 
-    if (token === "") {
+    if (token === null) {
       history.push("/signup");
     } else {
       axios
@@ -33,44 +37,14 @@ function FeedPage() {
     showPosts();
   }, []);
 
-  return (
-    <div>
+  return ( 
+      
       <div>
-        <form>
-          <fieldset>
-            <input type="textarea" />
-            <input type="textarea" />
-          </fieldset>
-        </form>
-        <button>POSTAR</button>
-      </div>
-      <div>
-        {posts.map(p => {
-          return (
-            <div className="PostsExibithion" key={p.id}>
-              <div>
-                {" "}
-                <h3>{p.title} </h3>
-              </div>
-              <div>
-                <p>{p.username}</p>
-              </div>
-              <div>
-                <p>{p.text}</p>
-              </div>
-              <div>
-                <p>
-                  <span>Positivo </span>
-                  {p.votesCount}
-                  <span> Negativo</span>{" "}
-                </p>
-                <p>{p.commentsCount} Comentários</p>
-              </div>
-            </div>
-          );
-        })}
-      </div>
-    </div>
+        <Header />
+        <CardPost />
+        <CardFeed />
+        
+      </div>    
   );
 }
 
