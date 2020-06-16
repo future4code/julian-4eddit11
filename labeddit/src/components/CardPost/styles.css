@@ -1,0 +1,71 @@
+:root {
+  --button-color: #ca7300; /* cor de fundo do button  */
+  --font-color: #ffffff; /* cor da font do button  */
+  --hover-color: #dd0000; /* cor do hover ( efeito) ao passar o mouse no button  */
+  --text-color: #666; /* Cor usada nos textos do formulario */
+}
+
+.FormPost {
+    width: 500px;
+    margin: 0 auto;
+    border: 1px solid #999;
+    border-radius: 2px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    box-shadow: 2px 4px 5px #aaaaaa;
+  }
+  
+  .FormPost form {
+    display: flex;
+    flex-direction: column;
+    color: var(--text-color);
+  }
+  
+  .Titulo {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 0px;
+    border: none;
+    height: 40px;
+    outline: none;
+    border-color: #999;
+    font-size: 14px;
+  }
+  
+  .Textarea {
+    width: 90%;
+    margin: 0 auto;
+    border: none;
+    border-top: 1px solid #999;
+    border-bottom: 1px solid #999;
+    height: 100px;
+    outline: none;
+    font-size: 16px;
+  }
+
+  .Btn {
+    width: 100px;
+    height: 35px;
+    margin: 0 5px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+    color: #fff;
+    background-color: var(--button-color);
+    transition: 400ms;
+  }
+  
+  .Postar {
+    width: 90%;
+    height: 30px;
+    margin: 0 auto;
+    border-radius: 4px;
+    margin-bottom: 10px;
+  }
+  
+
+  .Btn:hover {
+    background-color: var(--hover-color);
+  }
+  
