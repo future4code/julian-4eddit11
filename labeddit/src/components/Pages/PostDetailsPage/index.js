@@ -1,7 +1,9 @@
-import React from "react";
+import React from 'react'
+
 
 const PostDetailsPage = () => {
-  return <h3> Detalhes dos Posts </h3>;
-};
 
-export default PostDetailsPage;
+    return (<div>POST DETAILS</div>)
+}
+
+export default PostDetailsPage

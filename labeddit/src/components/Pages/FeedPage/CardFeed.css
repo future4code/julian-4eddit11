@@ -1,0 +1,46 @@
+.PostsExibithion {
+    border: 1px solid #9f9f9f;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 2px 4px 5px #aaaaaa;
+    cursor: pointer;
+  }
+  
+  .HeaderFeed {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 95%;
+    margin: 0 auto;
+  }
+  
+  .ContentFeed {
+    display: flex;
+    flex: 1;
+    padding-top: 10px;
+    min-height: 100px;
+    border-top: 1px solid #9f9f9f;
+    border-bottom: 1px solid #9f9f9f;
+  }
+  
+  .ContentFeed p {
+    margin-left: 2.5%;
+  }
+  
+  .FooterFeed {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 95%;
+    margin-top: 10px;
+    padding-bottom: 4px;
+    align-items: center;
+  }
+  
+  .FooterVotesCount {
+    font-size: 24px;
+    font-weight: bold;
+    margin-right: 3px;
+  }
+  
